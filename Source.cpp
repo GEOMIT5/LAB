@@ -16,7 +16,7 @@ int main()
 	int i = 0;
 	char str[256];
 	
-	cout << "Âåäèòå ñèìâîë:" << endl;
+	cout << "Ã‚Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã¨Ã¬Ã¢Ã®Ã«:" << endl;
 	
 	cin.getline(str, 255);
 	
@@ -26,7 +26,7 @@ int main()
 			str[i] = (unsigned char)str[i] + 0x20;
 		}
 		else if (isupper(str[i])) str[i] = tolower(str[i]);
-		n = (int)str;
+		n = (int)str[i];
 		
 		cout << str << " " << n << " " << hex << n << " " << oct << endl;
 		i++;
