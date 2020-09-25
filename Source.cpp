@@ -21,11 +21,7 @@ int main()
 	cin.getline(str, 255);
 	
 	while (str[i]) {
-		if ((unsigned char)str[i] >= 0x00 && (unsigned char)str[i] <= 0xFF) 
-		{
-			str[i] = (unsigned char)str[i] + 0x20;
-		}
-		else if (isupper(str[i])) str[i] = tolower(str[i]);
+		
 		n = (int)str[i];
 		
 		cout << str << " " << n << " " << hex << n << " " << oct << endl;
